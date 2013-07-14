@@ -3,21 +3,32 @@
    ========================================================================== */
 
 /**
+ * Variables
+ *
+ * It is recommended to override these.
+ *
+ * 1. Component namespace.
+ */
+
+$bits-components-ns: 'bits-' !default; /* 1 */
+
+/**
  * Create a visual connection between UI actions that belong together.
  * Must only contain `ButtonGroup-item` objects as children.
  *
- * Example HTML:
+ * --------------
+ * Example usage:
  *
  * <div class="ButtonGroup">
- *     <div class="ButtonGroup-item">
- *         <a class="Button" href="#">Dashboard</a>
- *     </div>
- *     <div class="ButtonGroup-item">
- *         <a class="Button" href="#">Account</a>
- *     </div>
- *     <div class="ButtonGroup-item">
- *         <a class="Button" href="#">Logout</a>
- *     </div>
+ *   <div class="ButtonGroup-item">
+ *     <a class="Button" href="#">Dashboard</a>
+ *   </div>
+ *   <div class="ButtonGroup-item">
+ *     <a class="Button" href="#">Account</a>
+ *   </div>
+ *   <div class="ButtonGroup-item">
+ *     <a class="Button" href="#">Logout</a>
+ *   </div>
  * </div>
  */
 
@@ -29,7 +40,7 @@
  * 3. Prevent wrapping across multiple lines.
  */
 
-.ButtonGroup {
+.#{$bits-components-ns}ButtonGroup {
   display: inline-block;
   letter-spacing: -0.31em; /* 1 */
   text-rendering: optimizespeed; /* 2 */
@@ -43,7 +54,7 @@
  */
 
 .opera:-o-prefocus,
-.ButtonGroup {
+.#{$bits-components-ns}ButtonGroup {
   word-spacing: -0.43em;
 }
 
@@ -57,29 +68,32 @@
  *    the component.
  */
 
-.ButtonGroup-item {
+.#{$bits-components-ns}ButtonGroup-item {
   display: inline-block;
   letter-spacing: normal; /* 1 */
   margin-left: -1px; /* 2 */
   text-rendering: auto; /* 1 */
   vertical-align: top; /* 3 */
   word-spacing: normal; /* 1 */
-}
 
-.ButtonGroup-item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
-
 /**
  * Ensure that interactions with a button make it sit on top of other buttons
  * in the group.
  */
 
-.ButtonGroup-item .Button:hover,
-.ButtonGroup-item .Button:focus,
-.ButtonGroup-item .Button:active,
-.ButtonGroup-item .Button.is-pressed {
-  z-index: 1;
+.#{$bits-components-ns}ButtonGroup-item {
+  > .#{$bits-components-ns}Button {
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-pressed {
+      z-index: 1;
+    }
+  }
 }
 
 /**
@@ -91,16 +105,22 @@
  * All browsers that support `border-radius` also support `:not()`.
  */
 
-.ButtonGroup-item:not(:first-child):not(:last-child) .Button {
-  border-radius: 0;
+.#{$bits-components-ns}ButtonGroup-item:not(:first-child):not(:last-child) {
+  > .#{$bits-components-ns}Button {
+    border-radius: 0;
+  }
 }
 
-.ButtonGroup-item:first-child:not(:only-child) .Button {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+.#{$bits-components-ns}ButtonGroup-item:first-child:not(:only-child) {
+  > .#{$bits-components-ns}Button {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 
-.ButtonGroup-item:last-child:not(:only-child) .Button {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+.#{$bits-components-ns}ButtonGroup-item:last-child:not(:only-child) {
+  > .#{$bits-components-ns}Button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
 }

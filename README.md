@@ -1,14 +1,14 @@
-# Bits.scss button group
+# Bits.sass button group
 
 Button group component creating a visual connection between UI buttons that belong together.
 
-Read more about [Bits.scss toolkit](https://github.com/bits-scss/bits.scss).
+Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
 ## Installation
 
-* __Bower:__ `bower install --save bits-scss-button-group`
-* __Download:__ [zip](https://github.com/bits-scss/button-group/zipball/master), [tar.gz](https://github.com/bits-scss/button-group/tarball/master)
-* __Git:__ `git clone https://github.com/bits-scss/button-group.git`
+* __Bower:__ `bower install --save bits-sass-button-group`
+* __Download:__ [zip](https://github.com/bits-sass/button-group/zipball/master), [tar.gz](https://github.com/bits-sass/button-group/tarball/master)
+* __Git:__ `git clone https://github.com/bits-sass/button-group.git`
 
 ## Available SASS variables
 
@@ -25,7 +25,7 @@ An element with the `ButtonGroup` class must be used to wrap a collection of
 elements with the `ButtonGroup-item` class. The `ButtonGroup` component *must*
 only contain `ButtonGroup-item` components as children.
 
-The button group items may contain other components, e.g., [Bits.scss button](https://github.com/bits-scss/button)
+The button group items may contain other components, e.g., [Bits.sass button](https://github.com/bits-sass/button)
 or buttons with dropdown menus.
 
 ```html

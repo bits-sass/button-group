@@ -2,6 +2,7 @@
 
 * Reorder properties
 * Optimize `border-radius removal`
+* Add `.ButtonGroup--vertical` class for vertically stacked buttons
 
 === 0.2.1 (July 20, 2013)
 

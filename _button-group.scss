@@ -42,9 +42,10 @@ $bits-components-ns: 'bits-' !default; /* 1 */
 
 .#{$bits-components-ns}ButtonGroup {
   display: inline-block;
+  vertical-align: middle;
+
   letter-spacing: -0.31em; /* 1 */
   text-rendering: optimizespeed; /* 2 */
-  vertical-align: middle;
   white-space: nowrap; /* 3 */
 }
 
@@ -61,20 +62,21 @@ $bits-components-ns: 'bits-' !default; /* 1 */
 /**
  * Button group item
  *
- * 1. Reset the text defaults altered in `ButtonGroup`.
- * 2. Ensure that adjacent button borders slide over each other. Must match the
+ * 1. Ensure that adjacent button borders slide over each other. Must match the
  *    value of the button border width.
- * 3. Provide a consistent vertical alignment and avoid vertical whitespace in
+ * 2. Provide a consistent vertical alignment and avoid vertical whitespace in
  *    the component.
+ * 3. Reset the text defaults altered in `ButtonGroup`.
  */
 
 .#{$bits-components-ns}ButtonGroup-item {
   display: inline-block;
-  letter-spacing: normal; /* 1 */
-  margin-left: -1px; /* 2 */
-  text-rendering: auto; /* 1 */
-  vertical-align: top; /* 3 */
-  word-spacing: normal; /* 1 */
+  margin-left: -1px; /* 1 */
+  vertical-align: top; /* 2 */
+
+  letter-spacing: normal; /* 3 */
+  text-rendering: auto; /* 3 */
+  word-spacing: normal; /* 3 */
 
   &:first-child {
     margin-left: 0;

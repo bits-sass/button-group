@@ -12,6 +12,8 @@
 
 $bits-components-ns: 'bits-' !default; /* 1 */
 
+/* -------------------------------------------------------------------------- */
+
 /**
  * Create a visual connection between UI actions that belong together.
  * Must only contain `ButtonGroup-item` objects as children.
@@ -58,6 +60,8 @@ $bits-components-ns: 'bits-' !default; /* 1 */
 .#{$bits-components-ns}ButtonGroup {
   word-spacing: -0.43em;
 }
+
+/* -------------------------------------------------------------------------- */
 
 /**
  * Button group item

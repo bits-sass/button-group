@@ -107,22 +107,24 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  * All browsers that support `border-radius` also support `:not()`.
  */
 
-.#{$bits-components-ns}ButtonGroup-item:not(:first-child):not(:last-child) {
-  > .#{$bits-components-ns}Button {
-    border-radius: 0;
+.#{$bits-components-ns}ButtonGroup-item {
+  &:not(:first-child):not(:last-child) {
+    > .#{$bits-components-ns}Button {
+      border-radius: 0;
+    }
   }
-}
 
-.#{$bits-components-ns}ButtonGroup-item:first-child:not(:only-child) {
-  > .#{$bits-components-ns}Button {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+  &:first-child:not(:only-child) {
+    > .#{$bits-components-ns}Button {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
-}
 
-.#{$bits-components-ns}ButtonGroup-item:last-child:not(:only-child) {
-  > .#{$bits-components-ns}Button {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+  &:last-child:not(:only-child) {
+    > .#{$bits-components-ns}Button {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
   }
 }

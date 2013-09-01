@@ -1,6 +1,7 @@
 === HEAD
 
 * Reorder properties
+* Optimize `border-radius removal`
 
 === 0.2.1 (July 20, 2013)
 

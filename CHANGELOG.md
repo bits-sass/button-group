@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.3.0 (September 2, 2013)
+
 * Reorder properties
 * Optimize `border-radius removal`
 * Add `.ButtonGroup--vertical` class for vertically stacked buttons

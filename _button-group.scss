@@ -94,7 +94,7 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  */
 
 .#{$bits-components-ns}ButtonGroup-item {
-  > .#{$bits-components-ns}Button {
+  .#{$bits-components-ns}Button {
     &:hover,
     &:focus,
     &:active,
@@ -138,22 +138,22 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  */
 
 .#{$bits-components-ns}ButtonGroup:not(.ButtonGroup--vertical) {
-  .#{$bits-components-ns}ButtonGroup-item {
+  > .#{$bits-components-ns}ButtonGroup-item {
     &:not(:first-child):not(:last-child) {
-      > .#{$bits-components-ns}Button {
+      .#{$bits-components-ns}Button {
         border-radius: 0;
       }
     }
 
     &:first-child:not(:only-child) {
-      > .#{$bits-components-ns}Button {
+      .#{$bits-components-ns}Button {
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
       }
     }
 
     &:last-child:not(:only-child) {
-      > .#{$bits-components-ns}Button {
+      .#{$bits-components-ns}Button {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
       }
@@ -166,22 +166,22 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  */
 
 .#{$bits-components-ns}ButtonGroup--vertical {
-  .#{$bits-components-ns}ButtonGroup-item {
+  > .#{$bits-components-ns}ButtonGroup-item {
     &:not(:first-child):not(:last-child) {
-      > .#{$bits-components-ns}Button {
+      .#{$bits-components-ns}Button {
         border-radius: 0;
       }
     }
 
     &:first-child:not(:only-child) {
-      > .#{$bits-components-ns}Button {
+      .#{$bits-components-ns}Button {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
       }
     }
 
     &:last-child:not(:only-child) {
-      > .#{$bits-components-ns}Button {
+      .#{$bits-components-ns}Button {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
       }

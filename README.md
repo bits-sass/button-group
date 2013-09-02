@@ -17,6 +17,7 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 ## Available classes
 
 * `ButtonGroup` - wrapper component around a group of `ButtonGroup-item` objects
+* `ButtonGroup--vertical` - vertically stacked buttons
 * `ButtonGroup-item` - `ButtonGroup` sub-object used to contain other nodes
 
 ## Usage

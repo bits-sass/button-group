@@ -3,18 +3,6 @@
    ========================================================================== */
 
 /**
- * Variables
- *
- * It is recommended to override these.
- *
- * 1. Component namespace.
- */
-
-$bits-components-ns: 'bits-' !default; /* 1 */
-
-/* -------------------------------------------------------------------------- */
-
-/**
  * Create a visual connection between UI actions that belong together.
  * Must only contain `ButtonGroup-item` objects as children.
  *
@@ -33,6 +21,18 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  *   </div>
  * </div>
  */
+
+/* Variables
+   ========================================================================== */
+
+/**
+ * Bits.sass components namespace
+ */
+
+$bits-components-ns: 'bits-' !default; /* 1 */
+
+/* Component
+   ========================================================================== */
 
 /**
  * Button group
@@ -61,7 +61,8 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   word-spacing: -0.43em;
 }
 
-/* -------------------------------------------------------------------------- */
+/* Descendants
+   ========================================================================== */
 
 /**
  * Button group item
@@ -103,10 +104,11 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   }
 }
 
-/* -------------------------------------------------------------------------- */
+/* Component modifiers
+   ========================================================================== */
 
 /**
- * Modifier: vertically stacked buttons
+ * Vertically stacked buttons
  */
 
 .#{$bits-components-ns}ButtonGroup--vertical {
@@ -122,7 +124,8 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   }
 }
 
-/* -------------------------------------------------------------------------- */
+/* Misc
+   ========================================================================== */
 
 /**
  * Remove the `border-radius` on adjacent sides of Button descendants.
